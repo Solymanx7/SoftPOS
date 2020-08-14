@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">SoftPOS</string>
+    <string name="Amount">Amount:</string>
+    <string name="fees">$0.00</string>
+    <string name="visa_icon_contentDescription">Visa icon</string>
+    <string name="mastercard_icon_contentDescription">Mastercard icon</string>
+
+    <string name="nfc_smartphone_contentDescription">Mobile with card on its back for NFC payment</string>
+    <string name="paymentGuide">Kindly put the card on the back of your mobile phone, and wait for seconds.</string>
+    <string name="waiting">Waiting ...</string>
+
+
 </resources>
