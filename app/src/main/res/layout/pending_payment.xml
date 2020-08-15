@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="235dp"
+    android:layout_height="270dp"
+    android:layout_gravity="center"
+    android:background="@color/White"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/nfc_smartphone_iv"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_smartphone_nfc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/nfc_smartphone_contentDescription" />
+
+        <TextView
+            android:id="@+id/payment_guide_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/source_code_pro"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/paymentGuide"
+            app:layout_constraintTop_toBottomOf="@id/nfc_smartphone_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/amount"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/fees_tv"
+            app:fontFamily="@font/source_code_pro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/payment_guide_tv" />
+
+        <TextView
+            android:id="@+id/fees_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/source_code_pro"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="$11.20"
+            android:textColor="@color/Black"
+            app:layout_constraintTop_toBottomOf="@id/payment_guide_tv"
+            app:layout_constraintStart_toEndOf="@id/amount_tv"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="237dp"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="10dp"
+            app:cornerRadius="10dp"
+            android:clickable="false"
+            app:backgroundTint="@color/Black"
+            android:textAllCaps="false"
+            android:text="@string/waiting"
+            app:iconSize="25dp"
+            app:iconTintMode="multiply"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fees_tv" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
