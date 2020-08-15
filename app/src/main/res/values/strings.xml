@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SoftPOS</string>
-    <string name="Amount">Amount:</string>
-    <string name="fees">$0.00</string>
+    <string name="amount">Amount:</string>
+    <string name="fees_value">%1$s0.00</string>
     <string name="visa_icon_contentDescription">Visa icon</string>
     <string name="mastercard_icon_contentDescription">Mastercard icon</string>
 

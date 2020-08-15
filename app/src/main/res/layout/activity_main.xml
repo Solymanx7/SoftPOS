@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Grey"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
     <TextView
         android:id="@+id/amount_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:text="@string/Amount"
+        android:text="@string/amount"
         android:textColor="@color/Black"
         android:textSize="50sp"
         app:fontFamily="@font/source_code_pro"
@@ -24,7 +24,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/fees_tiLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:boxBackgroundColor="@color/White"
         app:boxCornerRadiusBottomEnd="8dp"
@@ -37,15 +37,16 @@
         app:layout_constraintTop_toBottomOf="@id/amount_tv">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/fees_etv"
-            android:layout_width="370dp"
+            android:id="@+id/fees_et"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.7"
+            android:layout_marginHorizontal="10dp"
             android:gravity="center_horizontal"
             android:inputType="numberDecimal"
-            android:maxLength="11"
-            android:text="@string/fees"
+            android:maxLength="10"
             android:textAlignment="center"
+            android:imeOptions="actionDone"
             android:textColor="@color/Black"
             android:textSize="50sp"
             app:fontFamily="@font/source_code_pro" />
