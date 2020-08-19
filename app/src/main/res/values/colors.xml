@@ -6,5 +6,6 @@
 
     <color name="Black">#000000</color> <!--For amount value -->
     <color name="White">#FFFFFF</color> <!--For amount box background -->
-    <color name="Grey">#eeeeee</color>
+    <color name="Grey">#eeeeee</color> <!-- Application background -->
+    <color name="Red_Error">#ff0033</color> <!-- For errors -->
 </resources>

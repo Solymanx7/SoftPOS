@@ -1,4 +1,4 @@
-package com.example.android.softpos.ui.payment
+package com.example.android.softpos.ui.transactionHistory
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -10,7 +10,7 @@ import com.example.android.softpos.data.model.db.TransactionRoomDatabase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class PaymentViewModel(application:Application) : AndroidViewModel(application) {
+class TransactionViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository: TransactionRepository
 
@@ -22,10 +22,7 @@ class PaymentViewModel(application:Application) : AndroidViewModel(application) 
         allTransactions = repository.allTransactions
     }
 
-    /**
-     * Launching a new coroutine to insert the data in a non-blocking way
-     */
-    fun insert(transaction: Transaction) = viewModelScope.launch(Dispatchers.IO) {
-        repository.insert(transaction)
+    fun deleteAll()= viewModelScope.launch(Dispatchers.IO){
+        repository.deleteAll()
     }
 }

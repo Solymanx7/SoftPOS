@@ -7,7 +7,11 @@
 
     <string name="nfc_smartphone_contentDescription">Mobile with card on its back for NFC payment</string>
     <string name="paymentGuide">Kindly put the card on the back of your mobile phone, and wait for seconds.</string>
-    <string name="waiting">Waiting ...</string>
+    <string name="waiting">Waiting …</string>
+    <string name="paymentSuccess">Success</string>
+    <string name="paymentFail">Retry again ..</string>
+    <string name="creditCard_uid">CreditCard UID:</string>
+    <string name="date">Date:</string>
 
 
 </resources>

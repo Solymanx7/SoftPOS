@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/creditCardUID_tv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/creditCard_uid"
+            android:textStyle="bold"
+            app:fontFamily="@font/source_code_pro"
+            />
+
+        <TextView
+            android:id="@+id/creditCardUID_value_tv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/creditCardUID_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="16"
+            app:fontFamily="@font/source_code_pro"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            app:layout_constraintTop_toBottomOf="@id/creditCardUID_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/date"
+            android:textStyle="bold"
+            app:fontFamily="@font/source_code_pro"
+            />
+
+        <TextView
+            android:id="@+id/date_value_tv"
+            app:layout_constraintTop_toBottomOf="@id/creditCardUID_tv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/source_code_pro"
+            android:layout_marginLeft="10dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/AmountCardViewStyle"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp">
+            <TextView
+                android:id="@+id/fees_value_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/White"
+                app:fontFamily="@font/source_code_pro" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
