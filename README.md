@@ -32,6 +32,10 @@ to accept contacless smartcard using NFC technology.
 
 4. Fourth, I started to code, debug, repeat :)
 
+## Ideas came into my head for future updates !
+1. Considered that the person who owns the app has vision disability so we can add TTS and STT features using google speech api 
+2. Barcode scanner in addition to text inputs to automate the insertion values of some products
+3. Fingerprint/Face scan before each payment process
 
 
 
