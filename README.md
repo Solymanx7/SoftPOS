@@ -9,7 +9,7 @@ to accept contacless smartcard using NFC technology.
 ![Image of Yaktocat](https://svgshare.com/i/Nrp.svg)
 
 # Demo GIF
-![GIF](https://gfycat.com/unripehiddengalapagospenguin.gif)
+![GIF](https://github.com/Solymanx7/SoftPOS/blob/master/SoftPOS.gif)
 
 # Demo 
 [SoftPOS Video - Google Drive](https://drive.google.com/file/d/1KAAlaoD-PjrmCnXF3-N4FHWOJUY-UIPb/view?usp=sharing)
